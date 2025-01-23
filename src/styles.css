@@ -1,82 +1,118 @@
 :root {
-    --background-color: #212529;
-    --text-color: #f8f9fa;
+  --background-color: #212529;
+  --text-color: #f8f9fa;
+  --primary-color: #77b254;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
-    background-color: var(--background-color);
-    padding: 0 30vw 0 30vw;
+  background-color: var(--background-color);
+  width: 100vw;
+}
+
+#scrollbar-wrapper {
+  padding: 0 25vw;
 }
 
 #header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-    padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 3rem;
 }
 
-p, ul, li {
-    margin: 0.25rem 0;
+p,
+ul,
+li {
+  margin: 0.25rem 0;
 }
 
-h1, h2 {
-    margin: 0.5rem 0;
+h1,
+h2 {
+  margin: 0.5rem 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: var(--text-color);
+
+  padding-top: 2rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .section-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    color: var(--text-color);
+  display: none;
+  padding: 0 3rem;
+}
 
-    padding-top: 2rem;
+/* Style the button that opens the dropdown */
+.dropdown-btn {
+  width: 2rem;
+  height: auto;
+  padding-right: 1rem;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdown-btn.active {
+  color: var(--primary-color); /* Change color when active */
 }
 
 .role {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
 }
 
 .role-location {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .role-date {
-    font-style: italic;
+  font-style: italic;
 }
 
 .left {
-    max-width: 75%;
+  max-width: 75%;
 }
 
 .right {
-    text-align: end;
+  text-align: end;
 }
 
 a {
-    color: var(--text-color);
-    text-decoration: underline;
-    padding-right: 2rem;
+  color: var(--text-color);
+  text-decoration: underline;
+  padding-right: 2rem;
 }
 
 a:hover {
-    color: red; 
+  color: var(--primary-color);
 }
 
 #socials {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
 }
 
 #pfp {
-    object-fit: cover;
-    border-radius: 50%;
-    height: 124px;
-    width: 124px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 124px;
+  width: 124px;
 }
-
