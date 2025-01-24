@@ -14,9 +14,16 @@ body {
 }
 
 #scrollbar-wrapper {
-  min-width: 500px;
+  min-width: 600px;
   padding: 0 25vw;
   overflow: auto;
+}
+
+#pfp {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 124px;
+    width: 124px;
 }
 
 #header {
@@ -25,13 +32,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem 0 3rem;
-}
-
-#pfp {
-  object-fit: cover;
-  border-radius: 50%;
-  height: 124px;
-  width: 124px;
 }
 
 /* Initial state for the dropdown content */
@@ -77,7 +77,6 @@ h2 {
 }
 
 .dropdown-btn {
-  width: clamp(1rem, 1.8rem, 2rem);
   height: auto;
   padding-right: 1rem;
   cursor: pointer;
