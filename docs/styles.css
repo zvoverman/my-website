@@ -83,6 +83,11 @@ h2 {
   user-select: none;
 }
 
+.dropdown-btn:hover {
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
 .dropdown-btn.active {
   color: var(--primary-color);
 }
@@ -113,15 +118,18 @@ h2 {
 a {
   color: var(--text-color);
   text-decoration: underline;
-  padding-right: 2rem;
-}
-
-a:hover {
-  color: var(--primary-color);
 }
 
 #socials {
   display: flex;
   flex-direction: row;
   padding: 0.5rem 0;
+
+  a {
+    padding-right: 2rem;
+  }
+}
+
+a:hover {
+  color: var(--primary-color);
 }
