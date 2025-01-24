@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name | Personal Website</title>
+    <!-- NO CRAWL -->
+    <meta name="robots" content="noindex" />
+    <title>Zach | Website</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
@@ -26,7 +28,7 @@
       <!-- ABOUT -->
       <div class="section-wrapper" id="about">
         <div class="section-header">
-          <h2 class="dropdown-btn" onclick="toggleDropdown(event)">[+]</h2>
+          <div class="dropdown-btn" onclick="toggleDropdown(event)">[ + ]</div>
           <h2>About</h2>
         </div>
         <div class="section-body">
@@ -42,7 +44,7 @@
 
       <div class="section-wrapper" id="experience">
         <div class="section-header">
-          <h2 class="dropdown-btn" onclick="toggleDropdown(event)">[+]</h2>
+          <div class="dropdown-btn" onclick="toggleDropdown(event)">[ + ]</div>
           <h2>Experience</h2>
         </div>
         <div class="section-body" id="experience">
@@ -99,7 +101,7 @@
       <!-- EDUCATION -->
       <div class="section-wrapper">
         <div class="section-header">
-          <h2 class="dropdown-btn" onclick="toggleDropdown(event)">[+]</h2>
+          <div class="dropdown-btn" onclick="toggleDropdown(event)">[ + ]</div>
           <h2>Education</h2>
         </div>
 
@@ -111,19 +113,19 @@
               <ul>
                 <li>Minors: Psychology, Mathematics</li>
                 <li>
-                  Selected coursework: Algorithms and Data Structures, Systems
-                  Programming, Software Engineering, Linear Algebra, Discrete
-                  Structures, Social Psychology, Intro to Cognitive Neuroscience
-                </li>
-                <li>
                   Accomplishments: Dean's List (Fall 2021, Spring 2021, Fall
                   2023, Winter 2024, Fall 2024), Major GPA: 3.72
+                </li>
+                <li>
+                  Selected coursework: Algorithms and Data Structures, Software
+                  Engineering, Systems Programming, Game Capstone, Linear
+                  Algebra, Discrete Structures, Social Psychology
                 </li>
               </ul>
             </div>
             <div class="right">
               <p>Denver, CO</p>
-              <p class="role-date">Oct 2023 - Oct 2024</p>
+              <p class="role-date">2021 - 2025</p>
             </div>
           </div>
         </div>
@@ -132,13 +134,13 @@
       <!-- PORTFOLIO -->
       <div class="section-wrapper">
         <div class="section-header">
-          <h2 class="dropdown-btn" onclick="toggleDropdown(event)">[+]</h2>
+          <div class="dropdown-btn" onclick="toggleDropdown(event)">[ + ]</div>
           <h2>Portfolio</h2>
         </div>
 
         <div class="section-body" id="portfolio">
           <div class="role">
-            <div class="left">
+            <div>
               <p class="role-location">Luchador Game</p>
               <p>github repo</p>
               <ul>
@@ -159,7 +161,7 @@
           </div>
 
           <div class="role">
-            <div class="left">
+            <div>
               <p class="role-location">AI Text Summarizer Tool Suite</p>
               <p>github repo</p>
               <ul>

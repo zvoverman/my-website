@@ -14,15 +14,39 @@ body {
 }
 
 #scrollbar-wrapper {
-  padding: 0 25vw;
+  min-width: 500px;
+  padding: 0 25vw; /* Scaling padding */
+  overflow: auto; /* Ensure the scrollbar appears when needed */
 }
 
 #header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
+  padding: 1rem 3rem 0 3rem;
+}
+
+#pfp {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 124px;
+  width: 124px;
+}
+
+/* Initial state for the dropdown content */
+.section-body {
+  opacity: 0; /* Hidden by default */
+  max-height: 0; /* Hidden with zero height */
+  overflow: hidden; /* Hide overflow to avoid visual glitch */
+  transition: opacity 0.3s ease-in-out, max-height 0.6s ease-in-out; /* Smooth transition for opacity and max-height */
   padding: 0 3rem;
+}
+
+/* When the content is shown, it will fade in and expand */
+.section-body.visible {
+  opacity: 1; /* Make it fully visible */
+  max-height: 600px; /* Set a large enough max-height for the expanded state */
 }
 
 p,
@@ -52,17 +76,17 @@ h2 {
   align-items: center;
 }
 
-.section-body {
+/* .section-body {
   display: none;
   padding: 0 3rem;
-}
+} */
 
 /* Style the button that opens the dropdown */
 .dropdown-btn {
-  width: 2rem;
+  width: clamp(1rem, 1.8rem, 2rem);
   height: auto;
   padding-right: 1rem;
-  font-size: 24px;
+  /* font-size: 24px; */
   cursor: pointer;
   user-select: none;
 }
@@ -108,11 +132,4 @@ a:hover {
   display: flex;
   flex-direction: row;
   padding: 0.5rem 0;
-}
-
-#pfp {
-  object-fit: cover;
-  border-radius: 50%;
-  height: 124px;
-  width: 124px;
 }
